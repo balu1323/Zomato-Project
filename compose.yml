@@ -1,9 +1,9 @@
 ---
 version: "3"
 services:
-	zomato:
-		deploy:
-			replicas: 3
-		image: balu18/zomato/v1
-		ports:
-			- "3000:3000"
+  zomato:
+    image: balu18/zomato:v1
+    deploy:
+      replicas: 4
+    ports:
+      - "3000:3000"
